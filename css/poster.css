@@ -102,6 +102,61 @@ html {
     
 }
 
+.container {
+    width: 75%;
+    text-align: center;
+    margin: 3rem auto
+}
+
+.carousel {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.carousel img {
+    width: 100%;
+
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+    display: none;
+}
+
+.carousel .carousel__item--visible{
+    display: block;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0.6;}
+    100% {opacity: 1;}
+}
+
+.carousel .carousel__actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-60%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: rgba(98, 85, 68, 0.767);
+    font-size: 2rem;
+    color: #fff;
+    margin: 0.5rem;
+}
+
 
 .movie-poster{
     height: 100%;
@@ -177,7 +232,7 @@ html {
 }
 
 footer {
-    margin-top: 12rem;
+    margin-top: 2rem;
     text-align: center;
     color: #777;
 }
